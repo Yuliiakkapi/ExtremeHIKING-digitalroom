@@ -1,0 +1,203 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #24455b;
+  color: white;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1b4ba8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+button:hover {
+  background-color: #1b4ba8;
+}
+
+.group-description {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+  background-color: #eef4f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loading-page {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+  z-index: -1; /* Keeps the video behind the content */
+}
+
+.loading-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-top: 160px;
+}
+
+.loading-content h1 {
+  text-align: left;
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+  line-height: 72px;
+}
+.loading-content-h1 {
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+}
+
+.loading-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #d2daec;
+}
+
+.loading-content button {
+  padding: 10px 20px;
+  background-color: #1b4ba8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.loading-content button:hover {
+  background-color: rgba(68, 88, 203, 0.9);
+}
+
+/* Global Section Background */
+.section-background {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Text Box Styles */
+.text-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Loading Section Background */
+.loading-section {
+  background-image: url("images/loading-bg.jpg"); /* Add your image path */
+}
+
+/* Group Selection Section */
+#group-selection {
+  background-image: url("images/group-selection-bg.jpg"); /* Add your image path */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+}
+#group-selection h2 {
+  color: #24455b;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+#group-selection form {
+  display: flex;
+  flex-direction: column;
+}
+
+#group-selection label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#group-selection select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure the select box does not exceed its container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#group-selection button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #1b4ba8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#group-selection button[type="submit"]:hover {
+  background-color: #1b4ba8;
+}
+
+/* Station Content Section */
+#station-content {
+  background-image: url("images/station-bg.jpg"); /* Add your image path */
+}
+
+#station-content h2 {
+  font-size: 40px;
+}
+
+/* Timer Display */
+#timer-container {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #c8a064;
+}

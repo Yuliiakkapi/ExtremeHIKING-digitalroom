@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winter Survival Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Page -->
+    <section id="loading-page" style="display: block; position: relative">
+      <!-- Video Background -->
+      <video id="background-video" autoplay loop muted>
+        <source src="200449-912702438_small.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- Overlay Content -->
+      <div class="loading-content">
+        <h1>Welcome to Extreme Hiking</h1>
+        <p>Get ready for an exciting winter survival adventure!</p>
+        <button id="start-adventure">Start Adventure</button>
+      </div>
+    </section>
+
+    <!-- Group Selection -->
+    <section id="group-selection" style="display: none">
+      <h2>Select Your Group</h2>
+      <form id="groupForm">
+        <label for="group">Choose your group:</label>
+        <select id="group" name="group">
+          <option value="Ice Baby">Ice Baby</option>
+          <option value="Frostbite Fighters">Frostbite Fighters</option>
+          <option value="Snow-vivors">Snow-vivors</option>
+          <option value="Puff Jacket Posse">Puff Jacket Posse</option>
+          <option value="The Yeti Betis">The Yeti Betis</option>
+          <option value="Hot Cocoa Hustlers">Hot Cocoa Hustlers</option>
+          <option value="Sleet Fleet">Sleet Fleet</option>
+        </select>
+
+        <button type="submit">Go to First Station</button>
+      </form>
+      <!-- Group Descriptions -->
+      <section class="group-description">
+        <p><b>Frostbite Fighters</b> - Dia, Donika, Maggie, Gabi, Aaron</p>
+        <p><b>Snow-vivors</b> - Victor, Evelina S, Misia, Jan, Svety</p>
+        <p><b>Puff Jacket Posse</b> - Malina, Beatrise, Peter, Elly, Hunter</p>
+        <p><b>The Yeti Betis</b> - Karoline, Lina, Alex, Elyna, Eve</p>
+        <p><b>Hot Cocoa Hustlers</b> - Adam, Nikol, Martha, Angie</p>
+        <p><b>Ice Baby</b> - Leon, Daniela, Diego, Jakub</p>
+        <p><b>Sleet Fleet</b> - Larisa, Aleksander, Dora, Agata</p>
+      </section>
+    </section>
+
+    <!-- Station Content -->
+    <section
+      id="station-content"
+      class="section-background"
+      style="display: none"
+    >
+      <div class="text-box">
+        <div id="timer-container">
+          <p>Time Remaining: <span id="timer">02:30</span></p>
+        </div>
+        <h1 id="station-number"></h1>
+        <h2 id="station-name"></h2>
+        <p id="station-description"></p>
+        <button id="next-station">Next Station</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
