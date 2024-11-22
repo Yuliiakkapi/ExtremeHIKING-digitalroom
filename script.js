@@ -48,12 +48,12 @@ const stations = [
 // Group flows: Each group starts at a different station and follows a specific order
 const groupFlows = {
   "Ice Baby": [0, 1, 2, 3, 4, 5, 6],
-  "Frostbite Fighters": [2, 3, 4, 5, 6, 0, 1],
-  "Snow-vivors": [3, 4, 5, 6, 0, 1, 2],
-  "Puff Jacket Posse": [4, 5, 6, 0, 1, 2, 3],
-  "The Yeti Betis": [5, 6, 0, 1, 2, 3, 4],
-  "Hot Cocoa Hustlers": [6, 5, 4, 3, 2, 1, 0],
-  "Sleet Fleet": [6, 5, 4, 3, 2, 1, 0],
+  "Frostbite Fighters": [0, 1, 2, 3, 4, 5, 6],
+  "Snow-vivors": [1, 2, 3, 4, 5, 6, 0],
+  "Puff Jacket Posse": [2, 3, 4, 5, 6, 0, 1],
+  "The Yeti Betis": [3, 4, 5, 6, 0, 1, 2],
+  "Hot Cocoa Hustlers": [4, 5, 6, 0, 1, 2, 3],
+  "Sleet Fleet": [6, 0, 1, 2, 3, 4, 5],
 };
 
 // State variables
