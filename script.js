@@ -47,8 +47,8 @@ const stations = [
 
 // Group flows: Each group starts at a different station and follows a specific order
 const groupFlows = {
-  "Ice Baby": [0, 1, 2, 3, 4, 5, 6],
   "Frostbite Fighters": [0, 1, 2, 3, 4, 5, 6],
+  "Ice Baby": [5, 6, 0, 1, 2, 3, 4],
   "Snow-vivors": [1, 2, 3, 4, 5, 6, 0],
   "Puff Jacket Posse": [2, 3, 4, 5, 6, 0, 1],
   "The Yeti Betis": [3, 4, 5, 6, 0, 1, 2],
